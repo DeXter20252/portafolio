@@ -43,6 +43,7 @@ header {
     overflow: hidden;
     color: #fff;
     text-align: center;
+    gap: 2rem;
 }
 
 header .textos {
@@ -50,7 +51,7 @@ header .textos {
 }
 
 .titulo {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
     padding: 50px;
     gap: 2rem;
