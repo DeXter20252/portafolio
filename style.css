@@ -50,9 +50,10 @@ header .textos {
 }
 
 .titulo {
-    font-size: 85px;
+    font-size: 60px;
     color: #fff;
     padding: 50px;
+    gap: 2rem;
 }
 
 .sesgoabajo {
