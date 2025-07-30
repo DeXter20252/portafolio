@@ -262,7 +262,8 @@ header .textos {
         padding: 10px;
     }
     .contenedor__item {
-        width: 180px;
+        width: 190px;
+        margin: 10px;
     }
     .parrafo {
         font-size: 20px;
