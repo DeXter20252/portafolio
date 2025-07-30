@@ -262,11 +262,10 @@ header .textos {
         padding: 10px;
     }
     .contenedor__item {
-        width: 200px;
-        margin: 5px;
+    max-width: 200px;
     }
     .parrafo {
-        font-size: 20px;
+        font-size: 15px;
         margin: 10px;
         text-align: center;
     }
