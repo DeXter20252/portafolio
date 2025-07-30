@@ -259,10 +259,10 @@ header .textos {
 
 @media (max-width: 600px) {
     .tarjeta {
-        padding: 5px;
+        padding: 10px;
     }
     .contenedor__item {
-        width: 200px;
+        width: 190px;
     }
     .parrafo {
         font-size: 20px;
