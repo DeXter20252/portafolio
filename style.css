@@ -79,26 +79,41 @@ header .textos {
 }
 
 .sobre_nosotros {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     text-align: center;
-    font-size: 56px;
+    font-size: 50px;
     margin-bottom: 10px;
-    font-weight: 600;
 }
 
 .slogan {
-    font-size: 40px;
-    font-weight: 300;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 50px;
+    max-width: 500px;
+    height: 100px;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 80px;
+    margin: auto;
+    background-color: var(--color-secundario);
+    box-shadow: 5px 10px 7px rgba(253, 255, 255, 0.37);
+    gap: 10rem;
+    border-radius: 1px;
 }
 
 .parrafo {
     margin-bottom: 100px;
     font-weight: 50px;
     font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: justify;
     line-height: 24px;
-    color: rgb(24, 16, 16);
+    color: rgb(255, 255, 255);
 }
 
 .presentacion__contenedor_botones {
@@ -127,6 +142,12 @@ header .textos {
     padding: 10px;
     margin: 5px;
     flex-grow: 5;
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+.contenedor__item:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
 .tarjeta {
@@ -261,13 +282,19 @@ header .textos {
     .tarjeta {
         padding: 10px;
     }
+
     .contenedor__item {
-    max-width: 200px;
+        max-width: 200px;
     }
+
     .parrafo {
         font-size: 15.4px;
         margin: 10px;
         text-align: center;
+    }
+
+    .slogan {
+        font-size: 25px;
     }
 
 }
