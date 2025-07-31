@@ -79,8 +79,8 @@ header .textos {
 }
 
 .sobre_nosotros {
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 300;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
     font-size: 50px;
@@ -98,7 +98,9 @@ header .textos {
     border: 1px solid rgb(224, 224, 224);
     padding: 80px;
     margin: auto;
-    background-color: var(--color-secundario);
+    background: linear-gradient(180deg,
+            var(--fondo-primario) 10%,
+            var(--fondo-secundario) 100%);
     box-shadow: 5px 10px 7px rgba(253, 255, 255, 0.37);
     gap: 10rem;
     border-radius: 1px;
@@ -145,9 +147,10 @@ header .textos {
     transition: all 400ms ease-out;
     cursor: default;
 }
+
 .contenedor__item:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
 }
 
 .tarjeta {
@@ -296,8 +299,9 @@ header .textos {
     .slogan {
         font-size: 25px;
     }
+
     .sobre_nosotros {
-        font-size: 25px;
+        font-size: 30px;
     }
 
 }
