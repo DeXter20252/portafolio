@@ -2,7 +2,8 @@
     --texto-primario: #ffffffef;
     --fondo-primario: hsl(212, 100%, 69%);
     --fondo-secundario: rgb(255, 255, 255);
-    --fondo-terciario: -moz-linear-gradient(top, #c03939, #2c2c2c 100px, #a2b4c3 80%);
+    --fondo-terciario: linear-gradient(to top, #c03939, #2c2c2c 100px, #a2b4c3 80%);
+
     --enlaces-tamanio: 1.2rem;
     --texto-peso-grueso: 700;
     --texto-secundario: #ffffff;
@@ -49,6 +50,8 @@ header {
 
 header .textos {
     margin-top: 152px;
+    animation: ondaEntrada 0.8s ease-in-out;
+
 }
 
 .titulo {
@@ -85,6 +88,8 @@ header .textos {
     text-align: center;
     font-size: 50px;
     margin-bottom: 10px;
+    position: relative;
+    animation: glitch 1s infinite;
 }
 
 .slogan {
@@ -138,6 +143,7 @@ header .textos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    animation: resplandor 2s infinite;
 }
 
 .contenedor__item {
@@ -179,7 +185,8 @@ header .textos {
     background-color: var(--texto-primario);
     color: var(--fondo-primario);
     border-radius: 4px;
-    background-color: 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .boton_oscuro {
@@ -280,6 +287,76 @@ header .textos {
     aspect-ratio: 1;
     filter: drop-shadow(0px 0px 2px var(--texto-primario));
 }
+.enlaces__item {
+  animation: parpadeoEstelar 2s infinite;
+}
+
+@keyframes parpadeoEstelar {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+
+@keyframes resplandor {
+    0% {
+        box-shadow: 0 0 5px #59effa;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #59effa, 0 0 40px #59effa;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #59effa;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes ondaEntrada {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
 
 @media (max-width: 600px) {
     .tarjeta {
