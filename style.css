@@ -81,6 +81,12 @@ header .textos {
     border-color: #fff transparent transparent transparent;
 }
 
+.acerca_de {
+    background: radial-gradient(circle at center, #84fab0, #8fd3f4);
+  animation: moveRadial 10s linear infinite;
+  background-size: 200% 200%;
+}
+
 .sobre_nosotros {
     font-family: "Protest Strike", sans-serif;
     font-weight: 400;
@@ -287,14 +293,23 @@ header .textos {
     aspect-ratio: 1;
     filter: drop-shadow(0px 0px 2px var(--texto-primario));
 }
+
 .enlaces__item {
-  animation: parpadeoEstelar 2s infinite;
+    animation: parpadeoEstelar 2s infinite;
 }
 
 @keyframes parpadeoEstelar {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -355,6 +370,27 @@ header .textos {
     }
 }
 
+@keyframes moveRadial {
+    0% {
+        background-position: center;
+    }
+
+    25% {
+        background-position: top left;
+    }
+
+    50% {
+        background-position: bottom right;
+    }
+
+    75% {
+        background-position: top right;
+    }
+
+    100% {
+        background-position: center;
+    }
+}
 
 
 
